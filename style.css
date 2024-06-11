@@ -17,7 +17,7 @@ main {
 }
 
 .game {
-  max-width: 60%;
+  max-width: 100%;
   padding: 4rem 2rem;
   background-color: white;
   background: linear-gradient(
@@ -78,18 +78,25 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+  .game {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .game {
+    width: 100%; /* Further adjust width for very small screens */
+  }
   h1 {
     text-align: center;
     font-size: 0.8em;
   }
-  .image-container {
-    padding: 10px;
-    width: 100%;
-  }
 
-  img {
-    width: 100%;
+  h2 {
+    text-align: center;
+    font-size: 0.8em;
   }
 
   .image-container button {
@@ -98,9 +105,7 @@ h1 {
     width: 50%;
     height: 30px;
   }
-
-  h2 {
-    font-size: 0.8em;
-  }
 }
+
+
 
