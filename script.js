@@ -38,7 +38,7 @@ function updateLives() {
 }
 
 document.getElementById("submitBtn").addEventListener("click", function () {
-  const placeInput = document.getElementById("guess").value.toLowerCase();
+  const placeInput = document.getElementById("guess").value.trim().toLowerCase();
 
   if (placeInput === shuffledPlaces[currentPlaceIndex].answer) {
     showNextImage();
